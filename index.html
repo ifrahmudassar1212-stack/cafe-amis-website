@@ -1,1 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Amis | Home</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Georgia', serif;
+        background-color: #f7f1e6;
+        color: #4a2e1f;
+    }
+
+    /* NAVBAR */
+    nav {
+        background-color: #4a2e1f;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav h2 {
+        color: #f7f1e6;
+        letter-spacing: 2px;
+        margin: 0;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 30px;
+        margin: 0;
+    }
+
+    nav ul li a {
+        color: #f7f1e6;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+
+    /* HERO SECTION */
+    .hero {
+        height: 90vh;
+        background: linear-gradient(rgba(74,46,31,0.65), rgba(74,46,31,0.65)),
+        url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085");
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 56px;
+        letter-spacing: 3px;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin: 15px 0 30px;
+        font-style: italic;
+    }
+
+    .hero a {
+        background-color: #c2a27c;
+        color: #4a2e1f;
+        padding: 14px 32px;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 30px;
+        transition: background 0.3s;
+    }
+
+    .hero a:hover {
+        background-color: #b28c64;
+    }
+
+    /* ABOUT */
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 80px 10%;
+        gap: 50px;
+    }
+
+    .about img {
+        width: 100%;
+        max-width: 450px;
+        border-radius: 16px;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .about-text {
+        max-width: 500px;
+    }
+
+    .about-text h2 {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+
+    .about-text p {
+        font-size: 17px;
+        line-height: 1.7;
+        color: #6b4a35;
+    }
+
+    /* FEATURES */
+    .features {
+        background-color: #fffaf2;
+        padding: 70px 10%;
+        text-align: center;
+    }
+
+    .features h2 {
+        font-size: 36px;
+        margin-bottom: 50px;
+    }
+
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+    }
+
+    .feature {
+        background-color: #f7f1e6;
+        padding: 35px 25px;
+        border-radius: 14px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .feature h3 {
+        margin-bottom: 10px;
+    }
+
+    .feature p {
+        color: #6b4a35;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: #4a2e1f;
+        color: #f7f1e6;
+        text-align: center;
+        padding: 30px 15px;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Café Amis</h2>
+    <ul>
+        <li><a href="index.html"Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="table.html">Price List</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+
+
+<section class="hero">
+    <div>
+        <h1>Welcome to Café Amis</h1>
+        <p>Where friends meet, coffee speaks, and moments last</p>
+        <a href="menu.html">Explore Our Menu</a>
+    </div>
+</section>
+<section class="about" id="story">
+    <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb" alt="Cafe interior">
+    <div class="about-text">
+        <h2>Our Story</h2>
+        <p>
+            We three friends( Ifrah,Nayab,Warisha) when we had nothing we thought about 
+opening a cafe shop Café Amis( The cafe of friends) & here we are even after countless hurdles we stand STRONG. 
+        </p>
+    </div>
+</section>
+<footer id="contact">
+<h3>Contact</h3>
+    <p> Telephone: 000-333-11112</p>
+    <p> Email: amis@gmail.com</p>
+    <p> Address: IST Block-06, Room 6323</p>
+</footer>
+</body>
+</html>
+
 
