@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-color: #f7f1e6;
+    color: #4a2e1f;
+}
+
+header {
+    background: linear-gradient(rgba(74,46,31,0.7), rgba(74,46,31,0.7)),
+    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-style: italic;
+}
+
+.menu-container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 100px;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #c2a27c;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.item-card {
+    background-color: #fffaf2;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.item-card:hover {
+    transform: translateY(-6px);
+}
+
+.item-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item-content {
+    padding: 20px;
+}
+
+.item-content h3 {
+    margin-bottom: 6px;
+}
+
+.item-content p {
+    font-size: 15px;
+    color: #6b4a35;
+}
+
+.price {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #4a2e1f;
+    color: #f7f1e6;
+    text-align: center;
+    padding: 30px;
+}
