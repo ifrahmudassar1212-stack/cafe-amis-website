@@ -9,4 +9,4 @@ A group semester project for Applications of ICT. This project is a multi-page c
 ## Project Details
 * **Technology:** HTML5, CSS3.
 * **Pages:** Home, Menu, Price List, Feedback.
-* **Live Link:** [Paste your GitHub Pages URL here]
+* **Live Link:** https://ifrahmudassar1212-stack.github.io/cafe-amis-website/
