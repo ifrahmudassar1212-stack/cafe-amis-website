@@ -5,85 +5,82 @@ body {
     color: #4a2e1f;
 }
 
-header {
-    background: linear-gradient(rgba(74,46,31,0.7), rgba(74,46,31,0.7)),
-    url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085");
-    background-size: cover;
-    background-position: center;
+/* NAVBAR */
+nav {
+    background-color: #4a2e1f;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HEADER */
+header {
     text-align: center;
-    padding: 80px 20px;
+    padding: 30px;
 }
 
-header h1 {
-    font-size: 48px;
-    letter-spacing: 2px;
-}
-
-header p {
-    font-style: italic;
-}
-
+/* MENU */
 .menu-container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 60px 100px;
+    padding: 40px;
 }
 
 .section h2 {
     text-align: center;
-    font-size: 34px;
-    margin-bottom: 40px;
-    border-bottom: 2px solid #c2a27c;
-    display: inline-block;
-    padding-bottom: 8px;
+    margin-bottom: 30px;
 }
 
+/* ITEMS LAYOUT */
 .items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
+/* CARD */
 .item-card {
-    background-color: #fffaf2;
-    border-radius: 12px;
+    width: 260px;
+    background: white;
+    border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-.item-card:hover {
-    transform: translateY(-6px);
-}
-
+/* IMAGE FIX (MAIN ISSUE) */
 .item-card img {
     width: 100%;
-    height: 200px;
+    height: 180px;
     object-fit: cover;
 }
 
+/* CONTENT */
 .item-content {
-    padding: 20px;
-}
-
-.item-content h3 {
-    margin-bottom: 6px;
-}
-
-.item-content p {
-    font-size: 15px;
-    color: #6b4a35;
+    padding: 15px;
+    text-align: center;
 }
 
 .price {
-    margin-top: 10px;
     font-weight: bold;
+    margin-top: 10px;
 }
 
+/* FOOTER */
 footer {
-    background-color: #4a2e1f;
-    color: #f7f1e6;
     text-align: center;
-    padding: 30px;
+    padding: 15px;
+    background: #4a2e1f;
+    color: white;
 }
