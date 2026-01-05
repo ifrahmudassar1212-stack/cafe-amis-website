@@ -28,10 +28,22 @@
         letter-spacing: 2px;
     }
 
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
     nav a {
         color: #f7f1e6;
         text-decoration: none;
         font-size: 16px;
+    }
+
+    nav a:hover {
+        text-decoration: underline;
     }
 
     /* FORM CONTAINER */
@@ -103,7 +115,6 @@
         font-weight: bold;
         color: #4a2e1f;
         cursor: pointer;
-        transition: background 0.3s;
     }
 
     button:hover {
@@ -132,24 +143,20 @@
     <h2>Café Amis</h2>
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="Pages/menu.html">Menu</a></li>
-        <li><a href="Pages/table.html">Price List</a></li>
-        <li><a href="Pages/feedback.html">Feedback</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="table.html">Price List</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
     </ul>
 </nav>
-
 
 <section class="form-section">
     <div class="form-box">
         <h1>Customer Feedback</h1>
-        <p>Your words helps to courage us</p>
+        <p>Your words help and encourage us</p>
 
         <form id="feedbackForm">
-            <label>Email (Gmail)</label>
+            <label>Email Address</label>
             <input type="email" id="email" placeholder="example@gmail.com" required>
-
-            <label>Password</label>
-            <input type="password" id="password" placeholder="Enter password" required>
 
             <label>Your Feedback</label>
             <textarea id="feedback" placeholder="Write your experience with Café Amis..." required></textarea>
@@ -169,30 +176,20 @@
         e.preventDefault();
 
         let email = document.getElementById("email").value;
-        let password = document.getElementById("password").value;
-        let feedback = document.getElementById("feedback").value;
         let msg = document.getElementById("msg");
 
-        if (!email.includes("@gmail.com")) {
+        if (!email.endsWith("@gmail.com")) {
             msg.style.color = "red";
             msg.innerText = "Please enter a valid Gmail address.";
             return;
         }
 
-        if (password.length < 6) {
-            msg.style.color = "red";
-            msg.innerText = "Password must be at least 6 characters.";
-            return;
-        }
-
         msg.style.color = "green";
-        msg.innerText = "Thank you for your valuable feedback ☕";
-        document.getElementById("feedbackForm").reset();
+        msg.innerText = "Thank you for your valuable feedback!";
+        this.reset();
     });
 </script>
 
 </body>
 </html>
-
-
 
