@@ -12,8 +12,6 @@
         background-color: #f7f1e6;
         color: #4a2e1f;
     }
-
-    /* NAVBAR */
     nav {
         background-color: #4a2e1f;
         padding: 15px 40px;
@@ -21,34 +19,27 @@
         justify-content: space-between;
         align-items: center;
     }
-
     nav h2 {
         color: #f7f1e6;
         letter-spacing: 2px;
         margin: 0;
     }
-
     nav ul {
         list-style: none;
         display: flex;
         gap: 30px;
         margin: 0;
     }
-
     nav ul li a {
         color: #f7f1e6;
         text-decoration: none;
         font-size: 16px;
     }
-
     nav ul li a:hover {
         text-decoration: underline;
     }
-
-    /* HERO SECTION */
-    .hero {
+    .header {
         height: 90vh;
-        /* Using a placeholder for your local image folder as seen in screenshot */
         background: linear-gradient(rgba(74,46,31,0.65), rgba(74,46,31,0.65)),
         url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085");
         background-size: cover;
@@ -60,33 +51,26 @@
         text-align: center;
         padding: 20px;
     }
-
-    .hero h1 {
+    .header h1 {
         font-size: 56px;
         letter-spacing: 3px;
     }
-
-    .hero p {
+    .header p {
         font-size: 20px;
         margin: 15px 0 30px;
         font-style: italic;
     }
-
-    .hero a {
+    .header a {
         background-color: #c2a27c;
         color: #4a2e1f;
         padding: 14px 32px;
         text-decoration: none;
         font-weight: bold;
         border-radius: 30px;
-        transition: background 0.3s;
     }
-
-    .hero a:hover {
+    .header a:hover {
         background-color: #b28c64;
     }
-
-    /* ABOUT */
     .about {
         display: flex;
         flex-wrap: wrap;
@@ -94,30 +78,24 @@
         padding: 80px 10%;
         gap: 50px;
     }
-
     .about img {
         width: 100%;
         max-width: 450px;
         border-radius: 16px;
         box-shadow: 0 12px 30px rgba(0,0,0,0.15);
     }
-
     .about-text {
         max-width: 500px;
     }
-
     .about-text h2 {
         font-size: 36px;
         margin-bottom: 15px;
     }
-
     .about-text p {
         font-size: 17px;
         line-height: 1.7;
         color: #6b4a35;
     }
-
-    /* FOOTER */
     footer {
         background-color: #4a2e1f;
         color: #f7f1e6;
@@ -127,9 +105,7 @@
     }
 </style>
 </head>
-
 <body>
-
 <nav>
     <h2>Café Amis</h2>
     <ul>
@@ -139,16 +115,13 @@
         <li><a href="Pages.html/feedback.html">Feedback</a></li>
     </ul>
 </nav>
-
-
-<section class="hero">
+<section class="header">
     <div>
         <h1>Welcome to Café Amis</h1>
         <p>Where friends meet, coffee speaks, and moments last</p>
         <a href="Pages.html/menu.html">Explore Our Menu</a>
     </div>
 </section>
-
 <section class="about" id="story">
     <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb" alt="Cafe interior">
     <div class="about-text">
@@ -160,7 +133,6 @@
         </p>
     </div>
 </section>
-
 <footer id="contact">
     <h3>Contact</h3>
     <p>Telephone: 000-333-11112</p>
@@ -168,7 +140,7 @@
     <p>Address: IST Block-06, Room 6323</p>
     <p>© 2026 Café Amis · Crafted with warmth & passion</p>
 </footer>
-
 </body>
 </html>
+
 
