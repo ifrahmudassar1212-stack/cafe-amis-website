@@ -1,66 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Café Amis | Feedback</title>
-    <style>
-        body { margin: 0; font-family: 'Georgia', serif; background-color: #f7f1e6; color: #4a2e1f; }
-        nav { background-color: #4a2e1f; padding: 15px 40px; display: flex; justify-content: space-between; align-items: center; }
-        nav h2 { color: #f7f1e6; margin: 0; letter-spacing: 2px; }
-        nav ul { list-style: none; display: flex; gap: 25px; margin: 0; padding: 0; }
-        nav a { color: #f7f1e6; text-decoration: none; font-size: 16px; }
-        nav a:hover { text-decoration: underline; }
-        .form-section { min-height: 90vh; display: flex; justify-content: center; align-items: center; padding: 40px 20px; }
-        .form-box { background-color: #fffaf2; padding: 45px 40px; border-radius: 18px; width: 100%; max-width: 450px; box-shadow: 0 15px 40px rgba(0,0,0,0.15); }
-        .form-box h1 { text-align: center; margin-bottom: 10px; font-size: 32px; }
-        label { display: block; margin-bottom: 8px; font-size: 15px; }
-        input, textarea { width: 100%; padding: 12px 14px; margin-bottom: 20px; border-radius: 10px; border: 1px solid #c2a27c; font-family: 'Georgia', serif; background-color: #f7f1e6; }
-        button { width: 100%; padding: 14px; background-color: #c2a27c; border: none; border-radius: 30px; font-size: 16px; font-weight: bold; cursor: pointer; }
-        footer { background-color: #4a2e1f; color: #f7f1e6; text-align: center; padding: 25px 15px; font-size: 14px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café Amis | Feedback</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Georgia', serif;
+        background-color: #f7f1e6;
+        color: #4a2e1f;
+    }
+
+    /* NAVBAR */
+    nav {
+        background-color: #4a2e1f;
+        padding: 15px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav h2 {
+        color: #f7f1e6;
+        margin: 0;
+        letter-spacing: 2px;
+    }
+
+    nav a {
+        color: #f7f1e6;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    /* FORM CONTAINER */
+    .form-section {
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .form-box {
+        background-color: #fffaf2;
+        padding: 45px 40px;
+        border-radius: 18px;
+        width: 100%;
+        max-width: 450px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+
+    .form-box h1 {
+        text-align: center;
+        margin-bottom: 10px;
+        font-size: 32px;
+    }
+
+    .form-box p {
+        text-align: center;
+        color: #6b4a35;
+        margin-bottom: 30px;
+        font-style: italic;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 15px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 12px 14px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        border: 1px solid #c2a27c;
+        font-family: 'Georgia', serif;
+        font-size: 15px;
+        background-color: #f7f1e6;
+        color: #4a2e1f;
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+        border-color: #4a2e1f;
+    }
+
+    textarea {
+        resize: none;
+        height: 120px;
+    }
+
+    button {
+        width: 100%;
+        padding: 14px;
+        background-color: #c2a27c;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #4a2e1f;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    button:hover {
+        background-color: #b28c64;
+    }
+
+    .message {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 14px;
+    }
+
+    footer {
+        background-color: #4a2e1f;
+        color: #f7f1e6;
+        text-align: center;
+        padding: 25px 15px;
+        font-size: 14px;
+    }
+</style>
 </head>
+
 <body>
+
 <nav>
     <h2>Café Amis</h2>
     <ul>
-        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="table.html">Price List</a></li>
         <li><a href="feedback.html">Feedback</a></li>
     </ul>
 </nav>
 
+
 <section class="form-section">
     <div class="form-box">
         <h1>Customer Feedback</h1>
+        <p>Your words helps to courage us</p>
+
         <form id="feedbackForm">
-            <label>Email Address</label>
+            <label>Email (Gmail)</label>
             <input type="email" id="email" placeholder="example@gmail.com" required>
+
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter password" required>
+
             <label>Your Feedback</label>
-            <textarea id="feedback" placeholder="Write your experience..." required></textarea>
+            <textarea id="feedback" placeholder="Write your experience with Café Amis..." required></textarea>
+
             <button type="submit">Submit Feedback</button>
-            <div id="msg" style="text-align:center; margin-top:10px;"></div>
+            <div class="message" id="msg"></div>
         </form>
     </div>
 </section>
 
-<footer>© 2026 Café Amis · Crafted with warmth & passion</footer>
+<footer>
+    © 2026 Café Amis · Crafted with warmth & passion
+</footer>
 
 <script>
     document.getElementById("feedbackForm").addEventListener("submit", function(e) {
         e.preventDefault();
+
         let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let feedback = document.getElementById("feedback").value;
         let msg = document.getElementById("msg");
-        if (!email.endsWith("@gmail.com")) {
+
+        if (!email.includes("@gmail.com")) {
             msg.style.color = "red";
             msg.innerText = "Please enter a valid Gmail address.";
             return;
         }
+
+        if (password.length < 6) {
+            msg.style.color = "red";
+            msg.innerText = "Password must be at least 6 characters.";
+            return;
+        }
+
         msg.style.color = "green";
-        msg.innerText = "Thank you for your valuable feedback!";
-        this.reset();
+        msg.innerText = "Thank you for your valuable feedback ☕";
+        document.getElementById("feedbackForm").reset();
     });
 </script>
+
 </body>
 </html>
